@@ -14,7 +14,7 @@ const SignatureBoxes = () => {
         What do you want to explore?
       </h2>
 
-      <div className="grid md:grid-cols-3 gap-8 max-w-6xl w-full">
+      <div className="grid md:grid-cols-4 gap-8 max-w-6xl w-full">
 
         {/* Projects */}
         <motion.div
@@ -57,6 +57,20 @@ const SignatureBoxes = () => {
             Awards, milestones, and recognitions earned through consistent execution.
           </p>
         </motion.div>
+        
+        <motion.div
+          whileHover={{ y: -8 }}
+          className={boxStyle}
+          onClick={() => navigate("/experience")}
+        >
+          <h3 className="text-xl font-semibold dark:text-white mb-4">
+            Where I've Been
+          </h3>
+          <p className="text-gray-600 dark:text-gray-300">
+            My journey through projects, experiments, and hands-on system building.
+          </p>
+        </motion.div>
+
 
       </div>
     </section>

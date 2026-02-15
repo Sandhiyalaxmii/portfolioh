@@ -1,11 +1,15 @@
 import { motion } from "framer-motion";
-
+import Reveal from "../ui/Reveal";
 const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 gap-12"
+      className="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 gap-12
+             bg-gradient-to-b from-transparent to-gray-100 
+             dark:to-gray-900"
     >
+      <Reveal>
+        {"a peek a boo to the whole portfolio"}
       {/* Avatar */}
       <motion.div
         initial={{ opacity: 0, x: -40 }}
@@ -28,9 +32,11 @@ const About = () => {
         </h2>
 
         <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-          A Data Engineering enthusiast building intelligent systems from structured chaos.
-          I design ETL pipelines, experiment with AI models, and transform ideas into scalable architectures.
+          I transform chaos into clean data pipelines and thoughts into quiet words.
+          A Data Engineering enthusiast building intelligent systems from structured
+          complexity — and an occasional writer who turns experiences into poetry and blogs.
         </p>
+
 
         <div className="mt-8 flex gap-4">
           <a
@@ -50,6 +56,7 @@ const About = () => {
           </a>
         </div>
       </motion.div>
+      </Reveal>
     </section>
   );
 };

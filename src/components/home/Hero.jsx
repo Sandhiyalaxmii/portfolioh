@@ -21,7 +21,7 @@ const Hero = () => {
         transition={{ delay: 0.6 }}
         className="mt-6 text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl"
       >
-        Where experiences are refined and transformed into engineered intelligence.
+        The experiences that refined, transformed and engineered my intelligence.
       </motion.p>
 
       {/* PS */}
