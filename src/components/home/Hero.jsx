@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();   // ✅ ADD THIS
+
   return (
     <section className="min-h-screen flex flex-col items-center justify-center text-center px-6">
 
@@ -35,17 +38,15 @@ const Hero = () => {
       </motion.p>
 
       {/* CTA Button */}
-      <motion.a
-        href="#about"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.4 }}
-        className="mt-8 px-6 py-3 border rounded-lg dark:border-white border-black 
+      <motion.button
+        onClick={() => navigate("/identity")}
+        className="mt-8 px-6 py-3 border rounded-lg 
+                   dark:border-white border-black 
                    dark:text-white text-black 
                    hover:scale-105 transition-all duration-300"
       >
         Explore →
-      </motion.a>
+      </motion.button>
 
     </section>
   );

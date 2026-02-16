@@ -2,6 +2,8 @@ import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import Navbar from "./components/layout/Navbar";
 import WiperIntro from "./components/intro/WiperIntro";
+import Identity from "./Pages/Identity";
+
 
 import Hero from "./components/home/Hero";
 import About from "./components/home/About";
@@ -51,6 +53,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/identity" element={<Identity />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/achievements" element={<Achievements />} />

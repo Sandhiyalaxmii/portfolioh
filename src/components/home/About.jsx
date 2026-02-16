@@ -9,7 +9,7 @@ const About = () => {
              dark:to-gray-900"
     >
       <Reveal>
-        {"a peek a boo to the whole portfolio"}
+        {"PEEK A BOO!"}
       {/* Avatar */}
       <motion.div
         initial={{ opacity: 0, x: -40 }}
@@ -30,13 +30,12 @@ const About = () => {
         <h2 className="text-3xl md:text-4xl font-bold dark:text-white mb-6">
           I'm Sandhiya Laxmi
         </h2>
-
+        
         <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
           I transform chaos into clean data pipelines and thoughts into quiet words.
           A Data Engineering enthusiast building intelligent systems from structured
           complexity — and an occasional writer who turns experiences into poetry and blogs.
         </p>
-
 
         <div className="mt-8 flex gap-4">
           <a
