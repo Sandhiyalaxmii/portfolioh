@@ -5,16 +5,24 @@ const SignatureBoxes = () => {
   const navigate = useNavigate();
 
   const boxStyle =
-    "cursor-pointer p-8 rounded-2xl border dark:border-white border-black transition-all duration-300 hover:scale-105 hover:shadow-xl";
-
+      "group relative cursor-pointer p-8 rounded-2xl border " +
+      "bg-white/60 dark:bg-white/5 backdrop-blur-lg " +
+      "dark:border-white/10 border-black/10 " +
+      "transition-all duration-300 " +
+      "hover:-translate-y-2 hover:shadow-xl " +
+      "hover:shadow-purple-200/40 dark:hover:shadow-purple-500/20";
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-6">
+    <section
+      id="explore"
+      className="min-h-screen flex flex-col items-center justify-center px-6 py-20"
+    >
+
 
       <h2 className="text-3xl md:text-4xl font-bold dark:text-white mb-12">
         What do you want to explore?
       </h2>
 
-      <div className="grid md:grid-cols-4 gap-8 max-w-6xl w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-6xl w-full">
 
         {/* Projects */}
         <motion.div

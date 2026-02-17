@@ -3,6 +3,7 @@ import { useState } from "react";
 import Navbar from "./components/layout/Navbar";
 import WiperIntro from "./components/intro/WiperIntro";
 import Identity from "./Pages/Identity";
+import Explore from "./Pages/Explore.jsx";
 
 
 import Hero from "./components/home/Hero";
@@ -28,11 +29,9 @@ function App() {
   const [showIntro, setShowIntro] = useState(true);
 
   return (
-    <div className="min-h-screen relative overflow-x-hidden 
-                    bg-gradient-to-br 
-                    from-gray-50 via-white to-gray-200 
-                    dark:from-black dark:via-gray-900 dark:to-gray-800 
-                    transition-colors duration-500">
+    <div className="bg-[radial-gradient(circle_at_top_left,_rgba(168,85,247,0.08),transparent_40%),radial-gradient(circle_at_bottom_right,_rgba(59,130,246,0.08),transparent_40%)]
+dark:bg-[radial-gradient(circle_at_top_left,_rgba(168,85,247,0.15),transparent_40%),radial-gradient(circle_at_bottom_right,_rgba(59,130,246,0.15),transparent_40%)]
+">
 
       {/* Background Glow */}
       <div className="pointer-events-none fixed inset-0 -z-10">
@@ -54,11 +53,13 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/identity" element={<Identity />} />
+            <Route path="/explore" element={<Explore />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/achievements" element={<Achievements />} />
-            <Route path="/experience" element={<Experience />} />
+           <Route path="/experience" element={<Experience />} />
           </Routes>
+
         </>
       )}
     </div>

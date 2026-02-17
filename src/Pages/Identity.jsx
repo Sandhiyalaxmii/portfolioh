@@ -1,4 +1,9 @@
+import { useNavigate } from "react-router-dom";
+
+
 const Identity = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen flex flex-col items-center px-6 py-20 dark:text-white">
 
@@ -80,8 +85,23 @@ const Identity = () => {
         </a>
 
       </div>
-
-      {/* Footer Identity Line */}
+      
+      <button
+        onClick={() => {
+        navigate("/explore");
+        setTimeout(() => {
+        const section = document.getElementById("explore");
+        section?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }}
+          className="mt-16 px-8 py-3 border rounded-lg 
+             dark:border-white border-black 
+             dark:text-white text-black 
+             hover:scale-105 transition-all duration-300"
+>
+         Explore more →
+      </button>
+     {/* Footer Identity Line */}
       <p className="mt-20 text-sm text-gray-400 dark:text-gray-500 italic text-center">
         Rooted in Tamil Nadu. Building for the world.
       </p>
