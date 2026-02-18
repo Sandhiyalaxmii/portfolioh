@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Reveal from "../ui/Reveal";
 
 const Contact = () => {
   const [message, setMessage] = useState("");
@@ -8,6 +9,7 @@ const Contact = () => {
 
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-6 text-center">
+      <Reveal>
 
       <h2 className="text-3xl md:text-4xl font-bold dark:text-white mb-6">
         Want to connect?
@@ -43,7 +45,7 @@ const Contact = () => {
         </motion.a>
 
       </div>
-
+      </Reveal>
     </section>
   );
 };

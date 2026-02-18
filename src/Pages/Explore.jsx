@@ -1,5 +1,5 @@
 import SignatureBoxes from "../components/home/SignatureBoxes";
-import Contact from "../components/sections/Contact";
+import Contact from "../components/sections/ContactSection";
 
 const Explore = () => {
   return (

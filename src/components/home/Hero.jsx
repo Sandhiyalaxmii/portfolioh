@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
-  const navigate = useNavigate();   // ✅ ADD THIS
+    // ✅ ADD THIS
 
   return (
     <section className="min-h-screen flex flex-col items-center justify-center text-center px-6">
@@ -39,14 +38,18 @@ const Hero = () => {
 
       {/* CTA Button */}
       <motion.button
-        onClick={() => navigate("/identity")}
+        onClick={() => {
+          const section = document.getElementById("identity");
+          section?.scrollIntoView({ behavior: "smooth" });
+        }}
         className="mt-8 px-6 py-3 border rounded-lg 
-                   dark:border-white border-black 
-                   dark:text-white text-black 
-                   hover:scale-105 transition-all duration-300"
+                  dark:border-white border-black 
+                  dark:text-white text-black 
+                  hover:scale-105 transition-all duration-300"
       >
         Explore →
       </motion.button>
+
 
     </section>
   );

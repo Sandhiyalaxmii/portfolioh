@@ -9,21 +9,32 @@ import Explore from "./Pages/Explore.jsx";
 import Hero from "./components/home/Hero";
 import About from "./components/home/About";
 import SignatureBoxes from "./components/home/SignatureBoxes";
-import Contact from "./components/sections/Contact";
+import Contact from "./components/sections/ContactSection.jsx";
 
 import Projects from "./Pages/Projects";
 import Skills from "./Pages/Skills";
 import Achievements from "./Pages/Achievements";
 import Experience from "./Pages/Experience";
+import IdentitySection from "./components/sections/IdentitySection";
+import StorySection from "./components/sections/StorySection";
+import Divider from "./components/ui/Divider";
+
 
 const Home = () => (
   <>
     <Hero />
-    <About />
+    <Divider />
+    <IdentitySection />
+    <Divider />
+    <StorySection />
+    <Divider />
     <SignatureBoxes />
+    <Divider />
     <Contact />
   </>
 );
+
+
 
 function App() {
   const [showIntro, setShowIntro] = useState(true);
@@ -52,13 +63,8 @@ dark:bg-[radial-gradient(circle_at_top_left,_rgba(168,85,247,0.15),transparent_4
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/identity" element={<Identity />} />
-            <Route path="/explore" element={<Explore />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/achievements" element={<Achievements />} />
-           <Route path="/experience" element={<Experience />} />
           </Routes>
+
 
         </>
       )}
