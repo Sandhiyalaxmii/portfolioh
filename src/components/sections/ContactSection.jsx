@@ -8,8 +8,98 @@ const Contact = () => {
   const isValid = message.trim().toLowerCase() === "hi";
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-6 text-center">
+    <section
+  id="contact"
+  className="py-32 px-6
+             bg-[#f1efe9] dark:bg-[#161616]"
+>
+
       <Reveal>
+      
+
+<div className="flex flex-wrap justify-center gap-12 mb-20 text-center">
+
+  {/* GitHub */}
+  <div className="flex flex-col items-center">
+    <a
+      href="https://github.com/Sandhiyalaxmii"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-24 h-24 rounded-full border flex items-center justify-center 
+                 dark:border-white border-black 
+                 hover:scale-110 transition-all duration-300"
+    >
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+        alt="GitHub"
+        className="w-12 h-12"
+      />
+    </a>
+    <p className="mt-4 text-sm dark:text-gray-300">
+      GitHub — I work
+    </p>
+  </div>
+
+  {/* LinkedIn */}
+  <div className="flex flex-col items-center">
+    <a
+      href="https://linkedin.com/in/YOUR_LINKEDIN"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-24 h-24 rounded-full border flex items-center justify-center 
+                 dark:border-white border-black 
+                 hover:scale-110 transition-all duration-300"
+    >
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+        alt="LinkedIn"
+        className="w-12 h-12"
+      />
+    </a>
+    <p className="mt-4 text-sm dark:text-gray-300">
+      LinkedIn — I flex
+    </p>
+  </div>
+
+  {/* Resume */}
+  <div className="flex flex-col items-center">
+    <a
+      href="/resume.pdf"
+      className="w-24 h-24 rounded-full border flex items-center justify-center 
+                 dark:border-white border-black 
+                 hover:scale-110 transition-all duration-300 text-3xl"
+    >
+      📄
+    </a>
+    <p className="mt-4 text-sm dark:text-gray-300">
+      Resume — Open for a real job
+    </p>
+  </div>
+
+{/* Gmail */}
+<div className="flex flex-col items-center">
+  <a
+    href="mailto:yourmail@gmail.com"
+    className="w-24 h-24 rounded-full border flex items-center justify-center 
+               dark:border-white border-black 
+               hover:scale-110 transition-all duration-300"
+  >
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png"
+      alt="Gmail"
+      className="w-12 h-12"
+    />
+
+  
+  </a>
+  <p className="mt-4 text-sm dark:text-gray-300">
+    Mail — Contact me
+  </p>
+</div>
+
+
+</div>
+
 
       <h2 className="text-3xl md:text-4xl font-bold dark:text-white mb-6">
         Want to connect?

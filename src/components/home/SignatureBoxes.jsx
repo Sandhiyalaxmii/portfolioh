@@ -14,8 +14,10 @@ const SignatureBoxes = () => {
   return (
     <section
       id="explore"
-      className="min-h-screen flex flex-col items-center justify-center px-6 py-20"
+      className="min-h-screen flex flex-col items-center justify-center px-6 py-24
+                bg-[#ece9e3] dark:bg-[#1c1c1c]"
     >
+
 
 
       <h2 className="text-3xl md:text-4xl font-bold dark:text-white mb-12">
@@ -81,6 +83,26 @@ const SignatureBoxes = () => {
 
 
       </div>
+      {/* Contact CTA */}
+<div className="mt-20 flex justify-center">
+  <button
+    onClick={() => {
+      const section = document.getElementById("contact");
+      section?.scrollIntoView({ behavior: "smooth" });
+    }}
+    className="px-6 py-3 rounded-xl
+           border border-zinc-400 dark:border-zinc-600
+           text-zinc-800 dark:text-zinc-200
+           bg-white/50 dark:bg-white/5
+           backdrop-blur-sm
+           hover:scale-105 transition-all duration-300"
+
+
+  >
+    Let’s connect →
+  </button>
+</div>
+
     </section>
   );
 };

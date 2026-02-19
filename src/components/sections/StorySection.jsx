@@ -2,7 +2,13 @@ import Reveal from "../ui/Reveal";
 
 const StorySection = () => {
   return (
-    <section className="py-32 px-6 bg-gray-50 dark:bg-gray-900">
+    <section
+      id="story"
+      className="py-32 px-6
+                bg-[#f8f7f4] dark:bg-[#0f0f0f]"
+    >
+
+
         <Reveal>
     
       
@@ -24,6 +30,26 @@ const StorySection = () => {
         </p>
 
       </div>
+      <div className="mt-16 flex justify-center">
+  <button
+    onClick={() => {
+      const section = document.getElementById("explore");
+      section?.scrollIntoView({ behavior: "smooth" });
+    }}
+    className="px-6 py-3 rounded-xl
+           border border-zinc-400 dark:border-zinc-600
+           text-zinc-800 dark:text-zinc-200
+           bg-white/50 dark:bg-white/5
+           backdrop-blur-sm
+           hover:scale-105 transition-all duration-300"
+
+
+
+  >
+    Explore more →
+  </button>
+</div>
+
       </Reveal>
     
     </section>

@@ -4,7 +4,9 @@ const Hero = () => {
     // ✅ ADD THIS
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center text-center px-6">
+    <section className="min-h-screen flex flex-col items-center justify-center 
+                   px-6 bg-[#f8f7f4] dark:bg-[#0f0f0f]">
+
 
       {/* Main Heading */}
       <motion.h1
@@ -42,10 +44,13 @@ const Hero = () => {
           const section = document.getElementById("identity");
           section?.scrollIntoView({ behavior: "smooth" });
         }}
-        className="mt-8 px-6 py-3 border rounded-lg 
-                  dark:border-white border-black 
-                  dark:text-white text-black 
-                  hover:scale-105 transition-all duration-300"
+        className="px-6 py-3 rounded-xl
+           border border-zinc-400 dark:border-zinc-600
+           text-zinc-800 dark:text-zinc-200
+           bg-white/50 dark:bg-white/5
+           backdrop-blur-sm
+           hover:scale-105 transition-all duration-300"
+
       >
         Explore →
       </motion.button>

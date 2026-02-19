@@ -10,7 +10,7 @@ const ThemeToggle = () => {
       className="text-sm px-4 py-2 border rounded-lg transition-all duration-300 
                  dark:border-white border-black 
                  dark:text-white text-black
-                 hover:scale-105"
+                 hover:scale-105 bg-gray-100 dark:bg-gray-800"
     >
       {darkMode
         ? "Bring some light to life ☀️"

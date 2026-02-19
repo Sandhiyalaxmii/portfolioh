@@ -1,65 +1,143 @@
-
-const projects = [
-  {
-    title: "Autocleanr — Data Cleaning & Validation Pipeline",
-    tech: "Python, Pandas, SQL, CSV",
-    description:
-      "Designed a modular ETL pipeline to clean, validate, and structure raw CSV datasets. Automated handling of missing and inconsistent records and separated clean vs invalid records.",
-    github: "https://github.com/Sandhiyalaxmii",
-  },
-  {
-    title: "Autocleanr-scale — Distributed Pipeline (In Progress)",
-    tech: "PySpark, Python, Parquet",
-    description:
-      "Extending Autocleanr to handle large datasets using PySpark and adapting validation logic for distributed execution.",
-    github: "https://github.com/Sandhiyalaxmii",
-  },
-  {
-    title: "Layoff Dataset — Data Cleaning & EDA",
-    tech: "SQL",
-    description:
-      "Standardized and cleaned real-world layoff data, handled missing values and duplicates, and generated structured datasets for analysis.",
-    github: "https://github.com/Sandhiyalaxmii",
-  },
-];
-
 const Projects = () => {
   return (
-    <div className="min-h-screen px-10 py-20 dark:text-white">
-      <h1 className="text-4xl font-bold mb-12">Projects</h1>
+    <section className="min-h-screen px-6 md:px-20 py-24">
 
-      <div className="space-y-12">
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            className="border rounded-xl p-8 shadow-md bg-white dark:bg-gray-900"
-          >
-            <div className="mb-6 h-48 bg-gray-200 dark:bg-gray-700 rounded-lg flex items-center justify-center">
-              Project Image Space
-            </div>
+      <h1 className="text-4xl font-bold text-center mb-20 dark:text-white">
+        What I've Cooked 🍳
+      </h1>
 
-            <h2 className="text-2xl font-semibold">{project.title}</h2>
-            <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-              Tech Stack: {project.tech}
-            </p>
+
+      {/* ================= AUTO CLEANR ================= */}
+      <div className="flex flex-col gap-24">
+
+
+        {/* Project 1 */}
+        <div className="flex flex-col md:flex-row items-center gap-10">
+
+          {/* LEFT - IMAGE CIRCLE */}
+          <div className="w-48 h-48 rounded-full border-2 border-black dark:border-white flex items-center justify-center overflow-hidden">
+            {/* Replace with your image */}
+            <img
+              src="/images/autocleanr.png"
+              alt="AutoCleanr"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          {/* RIGHT - CONTENT */}
+          <div className="max-w-xl">
+
+            <h2 className="text-2xl font-semibold dark:text-white">
+              AutoCleanr
+            </h2>
 
             <p className="mt-4 text-gray-600 dark:text-gray-300">
-              {project.description}
+              A structured data cleaning engine designed for schema validation,
+              malformed data handling and automated ETL transformation workflows.
+              Built with scalability and clean architecture in mind.
             </p>
 
             <a
-              href={project.github}
+              href="https://github.com/YOUR_AUTOCLEANR_LINK"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-6 px-5 py-2 border rounded-lg dark:border-white border-black hover:scale-105 transition-all"
+              className="mt-4 inline-block text-sm underline hover:opacity-70"
             >
-              View on GitHub →
+              Go to GitHub →
             </a>
+
           </div>
-        ))}
+        </div>
+
+
+        {/* Divider Line */}
+        <div className="h-[1px] bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-700 to-transparent" />
+
+
+        {/* Project 2 - Scaled Version */}
+        <div className="flex flex-col md:flex-row items-center gap-10">
+
+          {/* LEFT */}
+          <div className="w-48 h-48 rounded-full border-2 border-black dark:border-white flex items-center justify-center overflow-hidden">
+            <img
+              src="/images/autocleanr-scale.png"
+              alt="AutoCleanr Scale"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          {/* RIGHT */}
+          <div className="max-w-xl">
+
+            <h2 className="text-2xl font-semibold dark:text-white">
+              AutoCleanr – Large Scale Version
+            </h2>
+
+            <p className="mt-4 text-gray-600 dark:text-gray-300">
+              An extended production-ready version capable of handling larger
+              datasets with modular ETL pipelines and scalable architecture
+              patterns for enterprise-level workflows.
+            </p>
+
+            <a
+              href="https://github.com/YOUR_AUTOCLEANR_SCALE_LINK"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-block text-sm underline hover:opacity-70"
+            >
+              Go to GitHub →
+            </a>
+
+          </div>
+        </div>
+
+
+        {/* Divider */}
+        <div className="h-[1px] bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-700 to-transparent" />
+
+
+        {/* ================= STUDENT COUNSELING ================= */}
+        <div className="flex flex-col md:flex-row items-center gap-10">
+
+          {/* LEFT */}
+          <div className="w-48 h-48 rounded-full border-2 border-black dark:border-white flex items-center justify-center overflow-hidden">
+            <img
+              src="/images/counseling.png"
+              alt="Student Counseling System"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          {/* RIGHT */}
+          <div className="max-w-xl">
+
+            <h2 className="text-2xl font-semibold dark:text-white">
+              Student Counseling System
+            </h2>
+
+            <p className="mt-4 text-gray-600 dark:text-gray-300">
+              A structured platform built to manage student counseling sessions,
+              track progress and assist with data-driven academic guidance.
+              Designed with clarity and usability in focus.
+            </p>
+
+            <a
+              href="https://github.com/YOUR_COUNSELING_LINK"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-block text-sm underline hover:opacity-70"
+            >
+              Go to GitHub →
+            </a>
+
+          </div>
+        </div>
+
+
       </div>
-    </div>
+    </section>
   );
 };
 
 export default Projects;
+

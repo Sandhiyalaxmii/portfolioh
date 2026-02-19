@@ -3,9 +3,11 @@ import Reveal from "../ui/Reveal";
 const IdentitySection = () => {
   return (
     <section
-            id="identity"
-            className="min-h-screen flex items-center px-6 py-20"
-            >
+        id="identity"
+        className="min-h-screen flex items-center px-6 py-24
+                    bg-[#f1efe9] dark:bg-[#161616]"
+        >
+
         <Reveal>
 
         
@@ -36,12 +38,23 @@ const IdentitySection = () => {
             </p>
 
             <button
-                className="px-6 py-3 border rounded-lg 
-                        dark:border-white border-black
-                        hover:scale-105 transition-all duration-300"
+            onClick={() => {
+                const section = document.getElementById("story");
+                section?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="px-6 py-3 rounded-xl
+           border border-zinc-400 dark:border-zinc-600
+           text-zinc-800 dark:text-zinc-200
+           bg-white/50 dark:bg-white/5
+           backdrop-blur-sm
+           hover:scale-105 transition-all duration-300"
+
+
+
             >
-                Kutty story about me →
+            Kutty story about me →
             </button>
+
             </div>
 
         </div>
