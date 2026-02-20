@@ -11,16 +11,15 @@ const Achievements = () => {
         {/* ================= NABARD JOURNEY ================= */}
         <div className="relative">
 
-          {/* Vertical Line */}
-          <div className="hidden md:block absolute left-20 top-20 h-[320px] w-[2px] 
-                          bg-gradient-to-b from-black to-transparent 
-                          dark:from-white opacity-40" />
 
           {/* Idea Pitch */}
           <div className="flex flex-col md:flex-row items-center gap-12 mb-20">
-            <div className="w-40 h-40 rounded-full border-2 border-black dark:border-white 
-                            flex items-center justify-center overflow-hidden bg-white dark:bg-zinc-900">
-              <img src="/images/nabard.png" alt="NABARD Idea Pitch"
+            <div className="w-full md:w-72 h-48
+                rounded-2xl overflow-hidden
+                border border-gray-300 dark:border-gray-700
+                shadow-sm
+                hover:shadow-md transition-all duration-300">
+              <img src="/images/nabard.jpeg" alt="NABARD Idea Pitch"
                    className="w-full h-full object-cover" />
             </div>
 
@@ -37,9 +36,12 @@ const Achievements = () => {
 
           {/* Winner */}
           <div className="flex flex-col md:flex-row items-center gap-12">
-            <div className="w-40 h-40 rounded-full border-2 border-black dark:border-white 
-                            flex items-center justify-center overflow-hidden bg-white dark:bg-zinc-900">
-              <img src="/images/nabard-win.png" alt="NABARD Winner"
+            <div className="w-full md:w-72 h-48
+                rounded-2xl overflow-hidden
+                border border-gray-300 dark:border-gray-700
+                shadow-sm
+                hover:shadow-md transition-all duration-300">
+              <img src="/images/nabard-win.jpeg" alt="NABARD Winner"
                    className="w-full h-full object-cover" />
             </div>
 
@@ -60,16 +62,16 @@ const Achievements = () => {
         {/* ================= TOASTMASTERS JOURNEY ================= */}
         <div className="relative">
 
-          {/* Vertical Line */}
-          <div className="hidden md:block absolute right-20 top-20 h-[320px] w-[2px] 
-                          bg-gradient-to-b from-black to-transparent 
-                          dark:from-white opacity-40" />
+        
 
           {/* Club Level */}
           <div className="flex flex-col md:flex-row-reverse items-center gap-12 mb-20">
-            <div className="w-40 h-40 rounded-full border-2 border-black dark:border-white 
-                            flex items-center justify-center overflow-hidden bg-white dark:bg-zinc-900">
-              <img src="/images/toastmasters-club.png"
+            <div className="w-full md:w-72 h-48
+                rounded-2xl overflow-hidden
+                border border-gray-300 dark:border-gray-700
+                shadow-sm
+                hover:shadow-md transition-all duration-300">
+              <img src="/images/toastmasters-club.jpeg"
                    alt="Toastmasters Club"
                    className="w-full h-full object-cover" />
             </div>
@@ -87,9 +89,12 @@ const Achievements = () => {
 
           {/* Area Level */}
           <div className="flex flex-col md:flex-row-reverse items-center gap-12">
-            <div className="w-40 h-40 rounded-full border-2 border-black dark:border-white 
-                            flex items-center justify-center overflow-hidden bg-white dark:bg-zinc-900">
-              <img src="/images/toastmasters-area.png"
+            <div className="w-full md:w-72 h-48
+                rounded-2xl overflow-hidden
+                border border-gray-300 dark:border-gray-700
+                shadow-sm
+                hover:shadow-md transition-all duration-300">
+              <img src="/images/toastmasters-area.jpeg"
                    alt="Toastmasters Area"
                    className="w-full h-full object-cover" />
             </div>
@@ -112,9 +117,12 @@ const Achievements = () => {
         <div className="flex flex-col md:flex-row items-center gap-12">
 
           {/* Image LEFT */}
-          <div className="w-40 h-40 rounded-full border-2 border-black dark:border-white 
-                          flex items-center justify-center overflow-hidden bg-white dark:bg-zinc-900">
-            <img src="/images/sql-win.png"
+          <div className="w-full md:w-72 h-48
+                rounded-2xl overflow-hidden
+                border border-gray-300 dark:border-gray-700
+                shadow-sm
+                hover:shadow-md transition-all duration-300">
+            <img src="/images/sql-win.jpeg"
                  alt="TCE SQL Win"
                  className="w-full h-full object-cover" />
           </div>

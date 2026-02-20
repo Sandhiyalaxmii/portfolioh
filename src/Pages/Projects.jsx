@@ -15,7 +15,11 @@ const Projects = () => {
         <div className="flex flex-col md:flex-row items-center gap-10">
 
           {/* LEFT - IMAGE CIRCLE */}
-          <div className="w-48 h-48 rounded-full border-2 border-black dark:border-white flex items-center justify-center overflow-hidden">
+          <div className="w-full md:w-80 h-56 
+                rounded-2xl overflow-hidden
+                border border-gray-300 dark:border-gray-700
+                shadow-sm
+                hover:shadow-lg transition-all duration-300">
             {/* Replace with your image */}
             <img
               src="/images/autocleanr.png"
@@ -41,7 +45,12 @@ const Projects = () => {
               href="https://github.com/YOUR_AUTOCLEANR_LINK"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-block text-sm underline hover:opacity-70"
+              className="mt-4 inline-block text-sm underline 
+           border border-gray-300 dark:border-gray-700 
+           rounded-md px-2 py-1 
+           bg-white dark:bg-zinc-900
+           text-zinc-800 dark:text-white
+           hover:opacity-70 transition-colors duration-300"
             >
               Go to GitHub →
             </a>
@@ -58,7 +67,11 @@ const Projects = () => {
         <div className="flex flex-col md:flex-row items-center gap-10">
 
           {/* LEFT */}
-          <div className="w-48 h-48 rounded-full border-2 border-black dark:border-white flex items-center justify-center overflow-hidden">
+          <div className="w-full md:w-80 h-56 
+                rounded-2xl overflow-hidden
+                border border-gray-300 dark:border-gray-700
+                shadow-sm
+                hover:shadow-lg transition-all duration-300">
             <img
               src="/images/autocleanr-scale.png"
               alt="AutoCleanr Scale"
@@ -83,7 +96,12 @@ const Projects = () => {
               href="https://github.com/YOUR_AUTOCLEANR_SCALE_LINK"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-block text-sm underline hover:opacity-70"
+              className="mt-4 inline-block text-sm underline 
+           border border-gray-300 dark:border-gray-700 
+           rounded-md px-2 py-1 
+           bg-white dark:bg-zinc-900
+           text-zinc-800 dark:text-white
+           hover:opacity-70 transition-colors duration-300"
             >
               Go to GitHub →
             </a>
@@ -100,7 +118,11 @@ const Projects = () => {
         <div className="flex flex-col md:flex-row items-center gap-10">
 
           {/* LEFT */}
-          <div className="w-48 h-48 rounded-full border-2 border-black dark:border-white flex items-center justify-center overflow-hidden">
+          <div className="w-full md:w-80 h-56 
+                rounded-2xl overflow-hidden
+                border border-gray-300 dark:border-gray-700
+                shadow-sm
+                hover:shadow-lg transition-all duration-300">
             <img
               src="/images/counseling.png"
               alt="Student Counseling System"
@@ -125,7 +147,12 @@ const Projects = () => {
               href="https://github.com/YOUR_COUNSELING_LINK"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-block text-sm underline hover:opacity-70"
+              className="mt-4 inline-block text-sm underline 
+           border border-gray-300 dark:border-gray-700 
+           rounded-md px-2 py-1 
+           bg-white dark:bg-zinc-900
+           text-zinc-800 dark:text-white
+           hover:opacity-70 transition-colors duration-300"
             >
               Go to GitHub →
             </a>

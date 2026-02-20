@@ -4,8 +4,12 @@ const IdentitySection = () => {
   return (
     <section
         id="identity"
-        className="min-h-screen flex items-center px-6 py-24
-                    bg-[#f1efe9] dark:bg-[#161616]"
+        className="min-h-screen px-6 py-24 
+           bg-gradient-to-b 
+           from-[#f8f7f4] 
+           to-[#f1efe9] 
+           dark:from-[#0f0f0f] 
+           dark:to-[#161616]"
         >
 
         <Reveal>

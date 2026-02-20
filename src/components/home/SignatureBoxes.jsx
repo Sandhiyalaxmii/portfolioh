@@ -14,8 +14,12 @@ const SignatureBoxes = () => {
   return (
     <section
       id="explore"
-      className="min-h-screen flex flex-col items-center justify-center px-6 py-24
-                bg-[#ece9e3] dark:bg-[#1c1c1c]"
+      className="min-h-screen px-6 py-24 
+           bg-gradient-to-b 
+           from-[#f8f7f4] 
+           to-[#f1efe9] 
+           dark:from-[#0f0f0f] 
+           dark:to-[#161616]"
     >
 
 

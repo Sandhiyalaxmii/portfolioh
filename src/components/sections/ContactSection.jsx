@@ -11,7 +11,7 @@ const Contact = () => {
     <section
   id="contact"
   className="py-32 px-6
-             bg-[#f1efe9] dark:bg-[#161616]"
+                bg-[#f8f7f4] dark:bg-[#0f0f0f]"
 >
 
       <Reveal>
