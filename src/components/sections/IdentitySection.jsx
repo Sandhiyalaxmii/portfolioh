@@ -31,14 +31,19 @@ const IdentitySection = () => {
                 வணக்கம்
             </p>
 
-            <h2 className="text-4xl md:text-5xl font-bold dark:text-white mb-6">
-                I’m Sandhiya Laxmi.
-            </h2>
+            <h2 className="heading-font text-5xl font-bold dark:text-white mb-6 text-center md:text-left">
+  I'm <span className="text-violet-600 dark:text-violet-400">Sandhiya Laxmi</span>
+</h2>
 
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                I transform chaos into clean data pipelines and thoughts into quiet words.
-                A Data Engineering enthusiast building intelligent systems from structured complexity —
-                and an occasional writer who turns experiences into poetry.
+                Hi people👋
+                <br />  
+
+I’m currently pursuing Artificial Intelligence and Data Science. Over time, I’ve found myself drawn toward working with data — understanding how it flows, how it can be structured, and how small changes can make systems work better.
+
+Writing has always stayed with me too. It shaped the way I think and express ideas.
+
+Somewhere between logic and language, I’m building my space — learning, experimenting, and figuring things out one project at a time.
             </p>
 
             <button

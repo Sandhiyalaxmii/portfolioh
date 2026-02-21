@@ -13,17 +13,16 @@ const Hero = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-4xl md:text-6xl font-bold dark:text-white"
-      >
-        Hi 👋 Welcome to my Hippocampus
+        className="heading-font text-5xl font-bold dark:text-white text-center">
+  HI !! WELCOME TO MY <span className="text-violet-600 dark:text-violet-400">HIPPOCAMPUS</span>
       </motion.h1>
-
+      
       {/* Tagline */}
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.6 }}
-        className="mt-6 text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl"
+        className="mt-6 text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl text-center"
       >
         The experiences that refined, transformed and engineered my intelligence.
       </motion.p>
@@ -49,7 +48,7 @@ const Hero = () => {
            text-zinc-800 dark:text-zinc-200
            bg-white/50 dark:bg-white/5
            backdrop-blur-sm
-           hover:scale-105 transition-all duration-300"
+           hover:scale-105 transition-all duration-300 center mt-10"
 
       >
         Explore →

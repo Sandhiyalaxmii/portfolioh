@@ -101,11 +101,11 @@ const Contact = () => {
 </div>
 
 
-      <h2 className="text-3xl md:text-4xl font-bold dark:text-white mb-6">
-        Want to connect?
-      </h2>
+      <h2 className="heading-font text-5xl font-bold text-black dark:text-white mb-6 text-center">
+  Want to <span className="text-violet-600 dark:text-violet-400">Connect</span>
+</h2>
 
-      <p className="text-gray-600 dark:text-gray-300 mb-8">
+      <p className="text-gray-600 dark:text-gray-300 mb-8 text-center">
         Type <span className="font-semibold">Hi</span> to start the conversation.
       </p>
 
