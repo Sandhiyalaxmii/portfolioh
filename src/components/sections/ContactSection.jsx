@@ -43,7 +43,7 @@ const Contact = () => {
   {/* LinkedIn */}
   <div className="flex flex-col items-center">
     <a
-      href="https://linkedin.com/in/YOUR_LINKEDIN"
+      href="https://linkedin.com/in/sandhiya-laxmi"
       target="_blank"
       rel="noopener noreferrer"
       className="w-24 h-24 rounded-full border flex items-center justify-center 
@@ -65,6 +65,8 @@ const Contact = () => {
   <div className="flex flex-col items-center">
     <a
       href="/resume.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
       className="w-24 h-24 rounded-full border flex items-center justify-center 
                  dark:border-white border-black 
                  hover:scale-110 transition-all duration-300 text-3xl"
@@ -79,7 +81,7 @@ const Contact = () => {
 {/* Gmail */}
 <div className="flex flex-col items-center">
   <a
-    href="mailto:yourmail@gmail.com"
+    href="mailto:sandhiyamuniappan955@gmail.com"
     className="w-24 h-24 rounded-full border flex items-center justify-center 
                dark:border-white border-black 
                hover:scale-110 transition-all duration-300"

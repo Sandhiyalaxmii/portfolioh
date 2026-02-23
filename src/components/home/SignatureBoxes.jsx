@@ -185,14 +185,18 @@ const SignatureBoxes = () => {
     <AchievementCard
       image="/images/nabard.jpeg"
       title="NABARD – Idea Pitch"
-      description="Presented an agribusiness innovation model under MABIF, focusing on scalable sustainable engineering solutions."
+      description=" The project focused on transforming agricultural waste 
+      into biodegradable plastic alternatives. An AI-based optimization tool 
+      dynamically determined material composition and proportion based on the 
+      intended storage use."
     />
 
     {/* NABARD Winner */}
     <AchievementCard
       image="/images/nabard-win.jpeg"
       title="NABARD Winner – ₹25,000"
-      description="Secured 1st place and won ₹25,000, validating the feasibility and innovation of the project."
+      description="Presented at TNAU finals and 
+      secured 1st place with a cash award of ₹25,000, affirming both innovation and execution strength."
     />
 
     {/* Toastmasters Club */}
@@ -275,16 +279,16 @@ const AchievementCard = ({ image, title, description }) => {
   return (
     <motion.div
       whileHover={{ scale: 1.03 }}
-      className="min-w-[420px] flex gap-6 p-6 rounded-2xl
+      className="min-w-[600px] flex gap-6 p-6 rounded-2xl
       bg-white/60 dark:bg-white/5 backdrop-blur-lg
       border border-black/10 dark:border-white/10"
     >
       {/* IMAGE */}
-      <div className="w-40 h-28 rounded-xl overflow-hidden border border-gray-300 dark:border-gray-700">
+      <div className="w-96 h-36 rounded-xl overflow-hidden border border-gray-300 dark:border-gray-700">
         <img
           src={image}
           alt={title}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover shrink-0"
         />
       </div>
 
@@ -336,14 +340,7 @@ const ProjectCard = ({ image, title, description, github }) => {
       bg-white/60 dark:bg-white/5 backdrop-blur-lg
       border border-black/10 dark:border-white/10"
     >
-      {/* SMALL IMAGE BOX (Same as Achievements style) */}
-      <div className="w-36 h-28 rounded-xl overflow-hidden border border-gray-300 dark:border-gray-700">
-        <img
-          src={image}
-          alt={title}
-          className="w-full h-full object-cover"
-        />
-      </div>
+      
 
       {/* TEXT CONTENT */}
       <div className="flex-1">
