@@ -6,14 +6,9 @@ import Explore from "./Pages/Explore.jsx";
 
 
 import Hero from "./components/home/Hero";
-import About from "./components/home/About";
 import SignatureBoxes from "./components/home/SignatureBoxes";
 import Contact from "./components/sections/ContactSection.jsx";
 
-import Projects from "./Pages/Projects";
-import Skills from "./Pages/Skills";
-import Achievements from "./Pages/Achievements";
-import Experience from "./Pages/Experience";
 import IdentitySection from "./components/sections/IdentitySection";
 import StorySection from "./components/sections/StorySection";
 import Divider from "./components/ui/Divider";
@@ -83,10 +78,6 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/achievements" element={<Achievements />} />
-            <Route path="/experience" element={<Experience />} />
           </Routes>
 
 

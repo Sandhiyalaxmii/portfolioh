@@ -124,7 +124,7 @@ const Contact = () => {
         />
 
         <motion.a
-          href={isValid ? "mailto:yourmail@gmail.com" : "#"}
+          href={isValid ? "mailto:sandhiyamuniappan955@gmail.com" : "#"}
           whileHover={isValid ? { scale: 1.05 } : {}}
           className={`px-6 py-3 rounded-lg border transition-all duration-300 
             ${

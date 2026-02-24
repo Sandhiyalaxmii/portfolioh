@@ -18,12 +18,37 @@ const IdentitySection = () => {
         <div className="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-16 items-center">
 
             {/* Left — Avatar */}
-            <div className="flex justify-center">
-            <div className="w-64 h-64 rounded-full bg-gray-200 dark:bg-gray-800 
-                            flex items-center justify-center text-6xl">
-                👩‍💻
-            </div>
-            </div>
+            <div className="relative flex justify-center items-center">
+
+  {/* OUTER PURPLE RING */}
+  <div className="absolute w-72 h-72 rounded-full border-4 border-violet-300 opacity-70"></div>
+
+  {/* INNER PURPLE RING */}
+  <div className="absolute w-68 h-68 rounded-full border-4 border-violet-500"></div>
+
+  {/* IMAGE */}
+  <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-white dark:border-black shadow-xl z-10">
+    <img
+      src="/images/sandhiya.jpeg"
+      alt="Sandhiya"
+      className="w-full h-full object-cover"
+    />
+  </div>
+
+  {/* DOODLE 1 – STAR */}
+  <div className="absolute -top-4 right-6 text-violet-400 text-xl opacity-70">
+    ✦
+  </div>
+
+  {/* DOODLE 2 – CURVE */}
+  <div className="absolute bottom-4 -left-6 text-violet-400 text-2xl opacity-60 rotate-12">
+    〰
+  </div>
+
+  {/* DOODLE 3 – SMALL DOT */}
+  <div className="absolute top-12 -left-4 w-3 h-3 bg-violet-400 rounded-full opacity-60"></div>
+
+</div>
 
             {/* Right — Text */}
             <div>
