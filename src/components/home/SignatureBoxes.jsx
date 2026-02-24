@@ -16,133 +16,36 @@ const SignatureBoxes = () => {
     setActiveSection(activeSection === section ? null : section);
   };
 
-  return (
-    <section
-      id="explore"
-      className="min-h-screen px-6 py-8 
-      bg-gradient-to-b 
-      from-[#f8f7f4] 
-      to-[#f1efe9] 
-      dark:from-[#0f0f0f] 
-      dark:to-[#161616]"
-    >
-      <h2 className="heading-font text-5xl font-bold dark:text-white mb-12 text-center">
-        What do you want to{" "}
-        <span className="text-violet-600 dark:text-violet-400">
-          explore?
-        </span>
-      </h2>
-
-      {/* TOP GRID */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-6xl w-full mx-auto">
-        
-        <motion.div
-          whileHover={{ y: -8 }}
-          className={boxStyle}
-          onClick={() => toggleSection("projects")}
-        >
-          <h3 className="relative inline-block text-3xl font-bold dark:text-white">
-            What I Cooked
-            <span className="block w-16 h-1 bg-violet-400 mt-3 rounded-full"></span>
-          </h3>
-          <p className="text-gray-600 dark:text-gray-300 mt-4">
-            Self-Curated Projects !!!
-          </p>
-        </motion.div>
-
-        <motion.div
-          whileHover={{ y: -8 }}
-          className={boxStyle}
-          onClick={() => toggleSection("skills")}
-        >
-          <h3 className="relative inline-block text-3xl font-bold dark:text-white">
-            My Formulations
-            <span className="block w-16 h-1 bg-violet-400 mt-3 rounded-full"></span>
-          </h3>
-          <p className="text-gray-600 dark:text-gray-300 mt-4">
-            Tech stack and tools !!!
-          </p>
-        </motion.div>
-
-        <motion.div
-          whileHover={{ y: -8 }}
-          className={boxStyle}
-          onClick={() => toggleSection("achievements")}
-        >
-          <h3 className="relative inline-block text-3xl font-bold dark:text-white">
-            The Stars on My Collar
-            <span className="block w-16 h-1 bg-violet-400 mt-3 rounded-full"></span>
-          </h3>
-          <p className="text-gray-600 dark:text-gray-300 mt-4">
-            Achievements !!!
-          </p>
-        </motion.div>
-
-        <motion.div
-          whileHover={{ y: -8 }}
-          className={boxStyle}
-          onClick={() => toggleSection("experience")}
-        >
-          <h3 className="relative inline-block text-3xl font-bold dark:text-white">
-            The Highways
-            <span className="block w-16 h-1 bg-violet-400 mt-3 rounded-full"></span>
-          </h3>
-          <p className="text-gray-600 dark:text-gray-300 mt-4">
-            Real world experience !!!
-          </p>
-        </motion.div>
-      </div>
-
-      {/* HORIZONTAL EXPAND PANEL */}
-      <AnimatePresence>
-        {activeSection && (
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 40 }}
-            transition={{ duration: 0.4 }}
-            className="mt-12 max-w-4xl mx-auto"
-          >
-            {/* YOUR SAME PURPLE LINE */}
-            <motion.div
-              initial={{ width: 0 }}
-              animate={{ width: "100%" }}
-              exit={{ width: 0 }}
-              transition={{ duration: 0.6 }}
-              className="h-[2px] bg-violet-400 mb-6"
+  const renderContent = (section) => {
+    switch (section) {
+      case "projects":
+        return (
+          <>
+            <ProjectCard
+              image="/images/autocleanr.png"
+              title="AutoCleanr"
+              description="Structured data cleaning engine with schema validation and automated ETL workflows."
+              github="https://github.com/YOUR_AUTOCLEANR_LINK"
             />
+            <ProjectCard
+              image="/images/autocleanr-scale.png"
+              title="AutoCleanr – Large Scale Version"
+              description="Production-ready scalable version handling larger datasets."
+              github="https://github.com/YOUR_AUTOCLEANR_SCALE_LINK"
+            />
+            <ProjectCard
+              image="/images/counseling.png"
+              title="Student Counseling System"
+              description="Platform to manage counseling sessions and track progress."
+              github="https://github.com/YOUR_COUNSELING_LINK"
+            />
+          </>
+        );
 
-            {/* HORIZONTAL CONTENT */}
-            <div className="flex gap-8 overflow-x-auto pb-2">
-              
-              {activeSection === "projects" && (
-  <>
-    <ProjectCard
-      image="/images/autocleanr.png"
-      title="AutoCleanr"
-      description="A structured data cleaning engine designed for schema validation, malformed data handling and automated ETL transformation workflows."
-      github="https://github.com/YOUR_AUTOCLEANR_LINK"
-    />
-
-    <ProjectCard
-      image="/images/autocleanr-scale.png"
-      title="AutoCleanr – Large Scale Version"
-      description="Production-ready version capable of handling larger datasets with modular ETL pipelines and scalable architecture patterns."
-      github="https://github.com/YOUR_AUTOCLEANR_SCALE_LINK"
-    />
-
-    <ProjectCard
-      image="/images/counseling.png"
-      title="Student Counseling System"
-      description="A structured platform to manage student counseling sessions, track progress and assist with data-driven academic guidance."
-      github="https://github.com/YOUR_COUNSELING_LINK"
-    />
-  </>
-)}
-
-              {activeSection === "skills" && (
-  <>
-    <SkillCard
+      case "skills":
+        return (
+          <>
+            <SkillCard
       title="Data Engineering"
       skills={["ETL Pipelines", "Data Cleaning", "Data Validation", "Data Ingestion"]}
     />
@@ -177,11 +80,12 @@ const SignatureBoxes = () => {
       skills={["Creative Thinking", "Public Speaking", "Leadership", "Collaboration"]}
     />
   </>
-)}
+);
 
-              {activeSection === "achievements" && (
-  <>
-    {/* NABARD Idea Pitch */}
+      case "achievements":
+        return (
+          <>
+                {/* NABARD Idea Pitch */}
     <AchievementCard
       image="/images/nabard.jpeg"
       title="NABARD – Idea Pitch"
@@ -220,32 +124,123 @@ const SignatureBoxes = () => {
       description="Secured 1st place in Madness SQL competition, demonstrating advanced ER modeling and SQL querying expertise."
     />
   </>
-)}
+);
 
-              {activeSection === "experience" && (
-  <>
-    <ExperienceCard
-      image="/images/eyantra.jpeg"   // add your image here
-      title="IoT Intern – eYantra"
-      description="Worked on IoT system integration, embedded systems development and real-time hardware-software interfacing under the eYantra initiative."
-    />
-  </>
-)}
+      case "experience":
+        return (
+          <>
+            <ExperienceCard
+              image="/images/eyantra.jpeg"
+              title="IoT Intern – eYantra"
+              description="Worked on IoT system integration and embedded systems development."
+            />
+          </>
+        );
 
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      default:
+        return null;
+    }
+  };
 
-      {/* CONTACT CTA */}
+  const sections = [
+    { key: "projects", title: "What I Cooked", desc: "Self-Curated Projects !!!" },
+    { key: "skills", title: "My Formulations", desc: "Tech stack and tools !!!" },
+    { key: "achievements", title: "The Stars on My Collar", desc: "Achievements !!!" },
+    { key: "experience", title: "The Highways", desc: "Real world experience !!!" },
+  ];
+
+  return (
+    <section
+      id="explore"
+      className="min-h-screen px-6 py-8 bg-gradient-to-b from-[#f8f7f4] to-[#f1efe9] dark:from-[#0f0f0f] dark:to-[#161616]"
+    >
+      <h2 className="heading-font text-5xl font-bold dark:text-white mb-12 text-center">
+        What do you want to{" "}
+        <span className="text-violet-600 dark:text-violet-400">
+          explore?
+        </span>
+      </h2>
+
+      {/* GRID */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-6xl mx-auto">
+
+        {sections.map((item) => (
+          <div key={item.key} className="flex flex-col">
+
+            {/* BOX */}
+            <motion.div
+              whileHover={{ y: -8 }}
+              className={boxStyle}
+              onClick={() => toggleSection(item.key)}
+            >
+              <h3 className="relative inline-block text-3xl font-bold dark:text-white">
+                {item.title}
+                <span className="block w-16 h-1 bg-violet-400 mt-3 rounded-full"></span>
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 mt-4">
+                {item.desc}
+              </p>
+            </motion.div>
+
+            {/* MOBILE EXPAND */}
+            <AnimatePresence>
+              {activeSection === item.key && (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 20 }}
+                  transition={{ duration: 0.3 }}
+                  className="lg:hidden mt-6"
+                >
+                  <motion.div
+                    initial={{ width: 0 }}
+                    animate={{ width: "100%" }}
+                    className="h-[2px] bg-violet-400 mb-6"
+                  />
+                  <div className="flex gap-6 overflow-x-auto pb-2">
+                    {renderContent(item.key)}
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+
+          </div>
+        ))}
+
+      </div>
+
+      {/* DESKTOP EXPAND */}
+      <div className="hidden lg:block">
+        <AnimatePresence>
+          {activeSection && (
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 40 }}
+              transition={{ duration: 0.4 }}
+              className="mt-12 max-w-4xl mx-auto"
+            >
+              <motion.div
+                initial={{ width: 0 }}
+                animate={{ width: "100%" }}
+                className="h-[2px] bg-violet-400 mb-6"
+              />
+              <div className="flex gap-8 overflow-x-auto pb-2">
+                {renderContent(activeSection)}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+
+      {/* CTA */}
       <div className="mt-12 flex justify-center">
         <button
           onClick={() => {
             const section = document.getElementById("contact");
             section?.scrollIntoView({ behavior: "smooth" });
           }}
-          className="px-4 py-2 rounded-xl
-          border border-zinc-400 dark:border-zinc-600
+          className="px-4 py-2 rounded-xl border border-zinc-400 dark:border-zinc-600
           text-zinc-800 dark:text-zinc-200
           bg-white/50 dark:bg-white/5
           backdrop-blur-sm
@@ -254,10 +249,12 @@ const SignatureBoxes = () => {
           Let’s connect →
         </button>
       </div>
+
     </section>
   );
 };
 
+/* ---------------- CARDS ---------------- */
 const HorizontalCard = ({ title }) => {
   return (
     <motion.div
@@ -399,4 +396,6 @@ const ExperienceCard = ({ image, title, description }) => {
     </motion.div>
   );
 };
+
+
 export default SignatureBoxes;
