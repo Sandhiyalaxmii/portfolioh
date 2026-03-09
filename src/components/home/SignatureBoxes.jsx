@@ -168,13 +168,18 @@ Uses dynamic prompt generation to create professional profile visuals."
       id="explore"
       className="min-h-screen px-6 py-8 bg-gradient-to-b from-[#f8f7f4] to-[#f1efe9] dark:from-[#0f0f0f] dark:to-[#161616]"
     >
-      <h2 className="heading-font text-5xl font-bold dark:text-white mb-12 text-center">
+      <h2 className="heading-font text-5xl font-bold dark:text-white mb-6 text-center">
         What do you want to{" "}
         <span className="text-violet-600 dark:text-violet-400">
           explore?
         </span>
       </h2>
-
+      <h6 className="heading-font text-xl font-bold dark:text-white mb-6 text-center italic">
+        click on the box you wish to{" "}
+        <span className="text-violet-600 dark:text-violet-400 italic">
+          explore!!
+        </span>
+      </h6>
       {/* GRID */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-6xl mx-auto">
 
