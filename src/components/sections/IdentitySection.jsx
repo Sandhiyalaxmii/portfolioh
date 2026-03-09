@@ -64,11 +64,11 @@ const IdentitySection = () => {
                 Hi people👋
                 <br />  
 
-I’m currently pursuing Artificial Intelligence and Data Science. Over time, I’ve found myself drawn toward working with data — understanding how it flows, how it can be structured, and how small changes can make systems work better.
+Hi, I’m Sandhiya Laxmi, an aspiring AI/ML engineer exploring how data, models, and systems come together to create intelligent solutions.
 
-Writing has always stayed with me too. It shaped the way I think and express ideas.
+I enjoy building projects that move from raw data to working models, experimenting with ideas and learning through implementation.
 
-Somewhere between logic and language, I’m building my space — learning, experimenting, and figuring things out one project at a time.
+Outside of technology, I write occasionally, and some of my poems have been published in the anthology Adulting by Writer’s Pocket.
             </p>
 
             <button

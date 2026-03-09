@@ -22,22 +22,37 @@ const SignatureBoxes = () => {
         return (
           <>
             <ProjectCard
-              image="/images/autocleanr.png"
-              title="AutoCleanr"
-              description="Structured data cleaning engine with schema validation and automated ETL workflows."
-              github="https://github.com/YOUR_AUTOCLEANR_LINK"
+              
+              title="Student Counseling System"
+              description="Machine learning system that predicts student dropout risk using academic and behavioral data.
+Includes an AI-powered counseling assistant to provide interactive guidance.."
+              github="https://github.com/Sandhiyalaxmii/student-counseling-system"
             />
             <ProjectCard
-              image="/images/autocleanr-scale.png"
+              
+              title="AutoCleanr"
+              description="Structured data cleaning engine with schema validation and automated ETL workflows using pandas."
+              github="https://github.com/Sandhiyalaxmii/autocleanr"
+            />
+            <ProjectCard
+              
               title="AutoCleanr – Large Scale Version"
-              description="Production-ready scalable version handling larger datasets."
+              description="Scalable data validation and preprocessing pipeline for large structured datasets.
+Built using PySpark to automate ETL workflows and improve processing efficiency."
               github="https://github.com/YOUR_AUTOCLEANR_SCALE_LINK"
             />
             <ProjectCard
-              image="/images/counseling.png"
-              title="Student Counseling System"
-              description="Platform to manage counseling sessions and track progress."
-              github="https://github.com/YOUR_COUNSELING_LINK"
+              
+              title="Image Captioning Model (CNN + GRU + Attention)"
+              description="Deep learning model that generates natural language captions from images.
+Uses CNN feature extraction with GRU sequence modeling and an attention mechanism."
+              github="https://github.com/Sandhiyalaxmii/CtC"
+            />
+            <ProjectCard
+              title="LinkVer – AI LinkedIn Banner Generator"
+              description="AI-powered web tool that generates personalized LinkedIn banner designs.
+Uses dynamic prompt generation to create professional profile visuals."
+              github="https://github.com/Sandhiyalaxmii/linkver"
             />
           </>
         );
@@ -46,23 +61,22 @@ const SignatureBoxes = () => {
         return (
           <>
             <SkillCard
-      title="Data Engineering"
-      skills={["ETL Pipelines", "Data Cleaning", "Data Validation", "Data Ingestion"]}
+      title="AI/ML"
+      skills={["Artificial Intelligence", "Machine Learning", "Deep Learning", "NLP","LLMs"]}
     />
-
+            <SkillCard
+      title="Programming Languages"
+      skills={["Python", "SQL"]}
+    />
     <SkillCard
       title="Big Data & Processing"
-      skills={["PySpark", "Parquet"]}
+      skills={["ETL Pipelines","PySpark", "Parquet"]}
     />
 
-    <SkillCard
-      title="Programming Languages"
-      skills={["Python", "SQL", "C"]}
-    />
 
     <SkillCard
       title="Frontend & Web"
-      skills={["HTML", "JavaScript", "React", "Tailwind CSS"]}
+      skills={["HTML","css","JavaScript"]}
     />
 
     <SkillCard
@@ -72,7 +86,7 @@ const SignatureBoxes = () => {
 
     <SkillCard
       title="Tools & Platforms"
-      skills={["Git", "GitHub", "VS Code"]}
+      skills={["Git", "GitHub", "VS Code","vercel"]}
     />
 
     <SkillCard
