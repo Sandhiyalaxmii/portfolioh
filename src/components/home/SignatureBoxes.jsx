@@ -166,15 +166,15 @@ Uses dynamic prompt generation to create professional profile visuals."
   return (
     <section
       id="explore"
-      className="min-h-screen px-6 py-8 bg-gradient-to-b from-[#f8f7f4] to-[#f1efe9] dark:from-[#0f0f0f] dark:to-[#161616]"
+      className="min-h-screen px-4 py-6 md:px-6 md:py-8 bg-gradient-to-b from-[#f8f7f4] to-[#f1efe9] dark:from-[#0f0f0f] dark:to-[#161616]"
     >
-      <h2 className="heading-font text-5xl font-bold dark:text-white mb-6 text-center">
+      <h2 className="heading-font text-4xl md:text-5xl font-bold dark:text-white mb-6 text-center">
         What do you want to{" "}
         <span className="text-violet-600 dark:text-violet-400">
           explore?
         </span>
       </h2>
-      <h6 className="heading-font text-xl font-bold dark:text-white mb-6 text-center italic">
+      <h6 className="heading-font text-lg md:text-xl font-bold dark:text-white mb-6 text-center italic">
         click on the box you wish to{" "}
         <span className="text-violet-600 dark:text-violet-400 italic">
           explore!!
@@ -256,16 +256,16 @@ Uses dynamic prompt generation to create professional profile visuals."
       <div className="mt-12 flex justify-center">
         <button
           onClick={() => {
-            const section = document.getElementById("contact");
+            const section = document.getElementById("story");
             section?.scrollIntoView({ behavior: "smooth" });
           }}
-          className="px-4 py-2 rounded-xl border border-zinc-400 dark:border-zinc-600
+          className="px-3 py-2 text-sm md:px-4 md:py-2 rounded-xl border border-zinc-400 dark:border-zinc-600
           text-zinc-800 dark:text-zinc-200
           bg-white/50 dark:bg-white/5
           backdrop-blur-sm
           hover:scale-105 transition-all duration-300"
         >
-          Let’s connect →
+          kutty story about me →
         </button>
       </div>
 
@@ -282,7 +282,7 @@ const HorizontalCard = ({ title }) => {
       bg-white/60 dark:bg-white/5 backdrop-blur-lg
       border border-black/10 dark:border-white/10"
     >
-      <h3 className="text-xl font-semibold dark:text-white">
+      <h3 className="text-lg md:text-xl font-semibold dark:text-white">
         {title}
       </h3>
       <p className="mt-3 text-sm text-gray-600 dark:text-gray-300">
@@ -310,10 +310,10 @@ const AchievementCard = ({ image, title, description }) => {
 
       {/* TEXT */}
       <div>
-        <h3 className="text-lg font-semibold dark:text-white">
+        <h3 className="text-lg md:text-xl font-semibold dark:text-white">
           {title}
         </h3>
-        <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
+        <p className="mt-2 text-sm md:text-base text-gray-600 dark:text-gray-300">
           {description}
         </p>
       </div>
@@ -328,7 +328,7 @@ const SkillCard = ({ title, skills }) => {
       bg-white/60 dark:bg-white/5 backdrop-blur-lg
       border border-black/10 dark:border-white/10"
     >
-      <h3 className="text-lg font-semibold dark:text-white mb-4">
+      <h3 className="text-lg md:text-xl font-semibold dark:text-white mb-4">
         {title}
       </h3>
 
@@ -336,7 +336,7 @@ const SkillCard = ({ title, skills }) => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="px-3 py-1 text-sm rounded-full
+            className="px-3 py-1 text-sm md:text-base rounded-full
             bg-white dark:bg-zinc-900
             border border-gray-300 dark:border-gray-700
             text-gray-700 dark:text-gray-300"
@@ -360,11 +360,11 @@ const ProjectCard = ({ image, title, description, github }) => {
 
       {/* TEXT CONTENT */}
       <div className="flex-1">
-        <h3 className="text-lg font-semibold dark:text-white">
+        <h3 className="text-lg md:text-xl font-semibold dark:text-white">
           {title}
         </h3>
 
-        <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
+        <p className="mt-2 text-sm md:text-base text-gray-600 dark:text-gray-300">
           {description}
         </p>
 
@@ -372,7 +372,7 @@ const ProjectCard = ({ image, title, description, github }) => {
           href={github}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-3 inline-block text-xs underline 
+          className="mt-3 inline-block text-xs md:text-sm underline 
           border border-gray-300 dark:border-gray-700 
           rounded-md px-2 py-1 
           bg-white dark:bg-zinc-900
@@ -404,11 +404,11 @@ const ExperienceCard = ({ image, title, description }) => {
 
       {/* TEXT RIGHT */}
       <div className="flex-1">
-        <h3 className="text-lg font-semibold dark:text-white">
+        <h3 className="text-lg md:text-xl font-semibold dark:text-white">
           {title}
         </h3>
 
-        <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
+        <p className="mt-2 text-sm md:text-base text-gray-600 dark:text-gray-300">
           {description}
         </p>
       </div>

@@ -20,9 +20,9 @@ const Home = () => (
     <Divider />
     <IdentitySection />
     <Divider />
-    <StorySection />
-    <Divider />
     <SignatureBoxes />
+    <Divider />
+    <StorySection />
     <Divider />
     <Contact />
   </>

@@ -31,7 +31,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-20 px-6 bg-[#f8f7f4] dark:bg-[#0f0f0f]"
+      className="py-16 px-4 md:py-20 md:px-6 bg-[#f8f7f4] dark:bg-[#0f0f0f]"
     >
       <Reveal>
 
@@ -61,7 +61,7 @@ const Contact = () => {
                 className="w-12 h-12 hidden dark:block invert"
               />
             </a>
-            <p className="mt-4 text-sm dark:text-gray-300">
+            <p className=" text-xs md:text-sm mt-4 dark:text-gray-300">
               GitHub — I build
             </p>
           </div>
@@ -82,7 +82,7 @@ const Contact = () => {
                 className="w-12 h-12"
               />
             </a>
-            <p className="mt-4 text-sm dark:text-gray-300">
+            <p className="mt-4 text-xs md:text-sm dark:text-gray-300">
               LinkedIn — I flex
             </p>
           </div>
@@ -99,7 +99,7 @@ const Contact = () => {
             >
               📄
             </a>
-            <p className="mt-4 text-sm dark:text-gray-300">
+            <p className="mt-4 text-xs md:text-sm dark:text-gray-300">
               Resume — Open for a Real job
             </p>
           </div>
@@ -118,7 +118,7 @@ const Contact = () => {
                 className="w-12 h-12"
               />
             </a>
-            <p className="mt-4 text-sm dark:text-gray-300">
+            <p className="mt-4 text-xs md:text-sm dark:text-gray-300">
               Email — contact me?
             </p>
           </div>
@@ -126,7 +126,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Heading */}
-        <h2 className="heading-font text-5xl font-bold text-black dark:text-white mb-6 text-center">
+        <h2 className="heading-font text-3xl md:text-5xl font-bold text-black dark:text-white mb-6 text-center">
           Want to <span className="text-violet-600 dark:text-violet-400">Connect</span>
         </h2>
 
@@ -146,7 +146,7 @@ const Contact = () => {
             name="from_name"
             placeholder="Your Name"
             required
-            className="px-6 py-3 border rounded-lg w-72 text-center 
+            className="px-4 py-2 md:px-6 md:py-3 border rounded-lg w-72 text-center 
                        dark:bg-black dark:text-white 
                        border-black dark:border-white outline-none"
           />
@@ -156,7 +156,7 @@ const Contact = () => {
             name="from_email"
             placeholder="Your Email"
             required
-            className="px-6 py-3 border rounded-lg w-72 text-center 
+            className="px-4 py-2 md:px-6 md:py-3 border rounded-lg w-72 text-center 
                        dark:bg-black dark:text-white 
                        border-black dark:border-white outline-none"
           />
@@ -166,7 +166,7 @@ const Contact = () => {
             placeholder="Your Message"
             required
             rows="2"
-            className="px-2 py-2 border rounded-lg w-72 text-center 
+            className="px-2 py-2 md:px-6 md:py-3 border rounded-lg w-72 text-center 
                        dark:bg-black dark:text-white 
                        border-black dark:border-white outline-none"
           />
@@ -174,7 +174,7 @@ const Contact = () => {
           <motion.button
             type="submit"
             whileHover={{ scale: 1.05 }}
-            className="px-6 py-3 rounded-lg border 
+            className="px-4 py-2 md:px-6 md:py-3 rounded-lg border 
                        border-black dark:border-white 
                        dark:text-white text-black
                        transition-all duration-300"

@@ -4,7 +4,7 @@ const IdentitySection = () => {
   return (
     <section
         id="identity"
-        className="min-h-screen px-6 py-24 
+        className="min-h-screen px-4 py-20 md:px-6 md:py-24 
            bg-gradient-to-b 
            from-[#f8f7f4] 
            to-[#f1efe9] 
@@ -56,7 +56,7 @@ const IdentitySection = () => {
                 வணக்கம்
             </p>
 
-            <h2 className="heading-font text-5xl font-bold dark:text-white mb-6 text-center md:text-left">
+            <h2 className="heading-font text-2xl md:text-5xl font-bold dark:text-white mb-6 text-center md:text-left">
   I'm <span className="text-violet-600 dark:text-violet-400">Sandhiya Laxmi</span>
 </h2>
 
@@ -73,10 +73,10 @@ Outside of technology, I write occasionally, and some of my poems have been publ
 
             <button
             onClick={() => {
-                const section = document.getElementById("story");
+                const section = document.getElementById("explore");
                 section?.scrollIntoView({ behavior: "smooth" });
             }}
-            className="px-6 py-3 rounded-xl
+            className=" px-4 py-1 md:px-6 md:py-3 rounded-xl
            border border-zinc-400 dark:border-zinc-600
            text-zinc-800 dark:text-zinc-200
            bg-white/50 dark:bg-white/5
@@ -86,7 +86,7 @@ Outside of technology, I write occasionally, and some of my poems have been publ
 
 
             >
-            Kutty story about me →
+            contact me →
             </button>
 
             </div>
